@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quizz</title>
+    <script src="../js/quizz.js"></script>
 </head>
 <body>
       <header>
@@ -22,19 +23,178 @@
     </nav>
   </header>
 
-  <main>
+<main>
+  <section id="quizz">
+    <h2>❓ Quizz : Testez vos connaissances </h2>
+    <p>
+      Répondez aux questions ci-dessous et cliquez sur <strong>Valider</strong> pour connaître votre score. <br>
+      <strong>une seule réponse correcte par question!</strong> 
+    </p>
 
-  </main>
+  <form id="quizForm">
+
+    <h3>Questions de Connaissances developpement Web</h3>
+    <p>1. Quelle balise HTML est utilisée pour insérer une image dans une page web ?</p>
+    <input type="radio" id="q1a" name="q1" value="a">
+    <label for="q1a">&lt;src&gt;</label><br>
+
+    <input type="radio" id="q1b" name="q1" value="b">
+    <label for="q1b">&lt;img&gt;</label><br>
+
+    <input type="radio" id="q1c" name="q1" value="c">
+    <label for="q1c">&lt;picture&gt;</label><br>
+
+
+    <p>2. Quelle propriété CSS est utilisée pour centrer horizontalement un élément <code>div</code> ?</p>
+    <input type="radio" id="q2a" name="q2" value="a">
+    <label for="q2a">text-align: center;</label><br>
+
+    <input type="radio" id="q2b" name="q2" value="b">
+    <label for="q2b">margin: auto;</label><br>
+
+    <input type="radio" id="q2c" name="q2" value="c">
+    <label for="q2c">align-items: center;</label><br>
+
+
+    <p>3. En HTML, à quoi sert l’attribut <code>alt</code> dans la balise &lt;img&gt; ?</p>
+    <input type="radio" id="q3a" name="q3" value="a">
+    <label for="q3a">Il définit la taille de l’image.</label><br>
+
+    <input type="radio" id="q3b" name="q3" value="b">
+    <label for="q3b">Il affiche un texte alternatif si l’image ne se charge pas.</label><br>
+
+    <input type="radio" id="q3c" name="q3" value="c">
+    <label for="q3c">Il change la position de l’image.</label><br>
+
+
+    <p>4. Quelle est la fonction JavaScript correcte pour afficher un message d’alerte ?</p>
+    <input type="radio" id="q4a" name="q4" value="a">
+    <label for="q4a">message("Hello");</label><br>
+
+    <input type="radio" id="q4b" name="q4" value="b">
+    <label for="q4b">alert("Hello");</label><br>
+
+    <input type="radio" id="q4c" name="q4" value="c">
+    <label for="q4c">console("Hello");</label><br>
+
+
+    <p>5. En CSS, quelle propriété change la couleur de fond d’un élément ?</p>
+    <input type="radio" id="q5a" name="q5" value="a">
+    <label for="q5a">background-color</label><br>
+
+    <input type="radio" id="q5b" name="q5" value="b">
+    <label for="q5b">color</label><br>
+
+    <input type="radio" id="q5c" name="q5" value="c">
+    <label for="q5c">text-background</label><br>
+
+
+    <h3>Questions de Connaissances Générales</h3>
+    <p>6. Quelle est la capitale du Japon ?</p>
+    <input type="radio" id="q6a" name="q6" value="a">
+    <label for="q6a">Séoul</label><br>
+    <input type="radio" id="q6b" name="q6" value="b">
+    <label for="q6b">Tokyo</label><br>
+    <input type="radio" id="q6c" name="q6" value="c">
+    <label for="q6c">Pékin</label><br>
+
+
+    <p>7. Combien y a-t-il de continents sur Terre ?</p>
+    <input type="radio" id="q7a" name="q7" value="a">
+    <label for="q7a">5</label><br>
+    <input type="radio" id="q7b" name="q7" value="b">
+    <label for="q7b">6</label><br>
+    <input type="radio" id="q7c" name="q7" value="c">
+    <label for="q7c">7</label><br>
+
+
+    <p>8. Quel est le plus grand océan du monde ?</p>
+    <input type="radio" id="q8a" name="q8" value="a">
+    <label for="q8a">Atlantique</label><br>
+    <input type="radio" id="q8b" name="q8" value="b">
+    <label for="q8b">Indien</label><br>
+    <input type="radio" id="q8c" name="q8" value="c">
+    <label for="q8c">Pacifique</label><br>
+
+
+    <p>9. Qui a peint la Joconde (Monna Lisa)?</p>
+    <input type="radio" id="q9a" name="q9" value="a">
+    <label for="q9a">Vincent Van Gogh</label><br>
+    <input type="radio" id="q9b" name="q9" value="b">
+    <label for="q9b">Pablo Picasso</label><br>
+    <input type="radio" id="q9c" name="q9" value="c">
+    <label for="q9c">Léonard de Vinci</label><br>
+
+
+    <h3>Questions de Connaissances Sportives</h3>
+    <p>10. Quelle planète est la plus proche du Soleil ?</p>
+    <input type="radio" id="q10a" name="q10" value="a">
+    <label for="q10a">Vénus</label><br>
+    <input type="radio" id="q10b" name="q10" value="b">
+    <label for="q10b">Mercure</label><br>
+    <input type="radio" id="q10c" name="q10" value="c">
+    <label for="q10c">Mars</label><br>
+
+
+    <p>11. Combien de joueurs y a-t-il sur le terrain dans une équipe de football ?</p>
+    <input type="radio" id="q11a" name="q11" value="a">
+    <label for="q11a">9</label><br>
+    <input type="radio" id="q11b" name="q11" value="b">
+    <label for="q11b">10</label><br>
+    <input type="radio" id="q11c" name="q11" value="c">
+    <label for="q11c">11</label><br>
+
+
+    <p>12. Quel pays a remporté la Coupe du Monde de football 2018 ?</p>
+    <input type="radio" id="q12a" name="q12" value="a">
+    <label for="q12a">Brésil</label><br>
+    <input type="radio" id="q12b" name="q12" value="b">
+    <label for="q12b">France</label><br>
+    <input type="radio" id="q12c" name="q12" value="c">
+    <label for="q12c">Argentine</label><br>
+
+
+    <p>13. En basket-ball, combien de points vaut un lancer franc (penalty) ?</p>
+    <input type="radio" id="q13a" name="q13" value="a">
+    <label for="q13a">1</label><br>
+    <input type="radio" id="q13b" name="q13" value="b">
+    <label for="q13b">2</label><br>
+    <input type="radio" id="q13c" name="q13" value="c">
+    <label for="q13c">3</label><br>
+
+
+    <p>14. Quel joueur détient le record du plus grand nombre de Ballons d’Or ?</p>
+    <input type="radio" id="q14a" name="q14" value="a">
+    <label for="q14a">Lionel Messi</label><br>
+    <input type="radio" id="q14b" name="q14" value="b">
+    <label for="q14b">Cristiano Ronaldo</label><br>
+    <input type="radio" id="q14c" name="q14" value="c">
+    <label for="q14c">Michel Platini</label><br>
+
+
+    <p>15. En tennis, combien de sets faut-il gagner pour remporter un match masculin en Grand Chelem ?</p>
+    <input type="radio" id="q15a" name="q15" value="a">
+    <label for="q15a">2</label><br>
+    <input type="radio" id="q15b" name="q15" value="b">
+    <label for="q15b">3</label><br>
+    <input type="radio" id="q15c" name="q15" value="c">
+    <label for="q15c">5</label><br>
+
+    <br>
+    <input type="button" value="Valider" onclick="checkAnswers()">
+  </form>
+
+  <div id="result" style="margin-top:20px; font-weight:bold;"></div>
+
+  </section>
+</main>
+
 
   <footer>
     <p>
       📍 Sfax, Tunisia |
       ✉️ <a href="mailto:wali7oussema@gmail.com">wali7oussema@gmail.com</a> |
       📞 <a href="tel:+21653356888">+216 53 356 888</a>
-    </p>
-    <p>
-      💼 <a href="https://www.linkedin.com/in/oussama-wali-547042301/" target="_blank">LinkedIn</a> |
-      🐙 <a href="https://github.com/Oussema-Wali" target="_blank">GitHub</a>
     </p>
     <p>© 2025 Oussema WALI</p>
   </footer>
