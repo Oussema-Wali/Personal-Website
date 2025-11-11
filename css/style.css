@@ -1,15 +1,10 @@
-/* ===========================================
-   Global CSS – Personal Website (Oussema Wali)
-   =========================================== */
 
-/* Reset default spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Base setup */
 html {
   scroll-behavior: smooth;
 }
@@ -23,9 +18,7 @@ body {
   padding: 0;
 }
 
-/* ===========================================
-   Header & Navigation
-   =========================================== */
+/*  Header & Navigation */
 header {
   background-color: #005bbb;
   color: white;
@@ -44,7 +37,7 @@ header img {
   height: auto;
 }
 
-/* Navigation bar */
+
 nav {
   margin-top: 10px;
 }
@@ -61,7 +54,6 @@ nav a:hover {
   color: #d6e9ff;
 }
 
-/* Active menu item */
 nav a.active {
   background-color: white;
   color: #005bbb;
@@ -70,9 +62,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* ===========================================
-   Main Content & Layout
-   =========================================== */
+/*   Main Content & Layout */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +77,6 @@ main {
   gap: 20px;
 }
 
-/* Article (main content area) */
 article {
   flex: 3;
   min-width: 300px;
@@ -101,7 +90,6 @@ main h2 {
   margin-bottom: 15px;
 }
 
-/* Aside (right side image) */
 aside {
   flex: 1;
   min-width: 200px;
@@ -117,9 +105,7 @@ aside img {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ===========================================
-   Text, Lists, Tables, and Images
-   =========================================== */
+/* Text, Lists, Tables, and Images*/
 ul {
   margin-left: 20px;
 }
@@ -136,7 +122,6 @@ img {
   height: auto;
 }
 
-/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -179,9 +164,7 @@ th {
 }
 
 
-/* ===========================================
-   Forms (Contact & Quiz)
-   =========================================== */
+/*  Forms (Contact & Quiz) */
 form {
   background: #f2f6ff;
   padding: 20px;
@@ -216,7 +199,6 @@ select {
   font-family: inherit;
 }
 
-/* Buttons */
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -235,7 +217,6 @@ input[type="button"]:hover {
   background-color: #003e8a;
 }
 
-/* Quiz result */
 #result {
   text-align: center;
   margin-top: 20px;
@@ -243,9 +224,7 @@ input[type="button"]:hover {
   color: #005bbb;
 }
 
-/* ===========================================
-   Footer
-   =========================================== */
+/* Footer*/
 footer {
   background-color: #005bbb;
   color: white;
@@ -264,9 +243,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ===========================================
-   Responsive Design (Mobile Friendly)
-   =========================================== */
+/*  Responsive Design (Mobile Friendly)*/
 @media (max-width: 768px) {
   header h1,
   header h2 {
