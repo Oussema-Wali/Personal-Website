@@ -2,7 +2,6 @@ function checkAnswers() {
   let score = 0;
   const total = 15;
 
-  // Correct answers
     const answers = {
     q1: "b", // <img>
     q2: "b", // margin: auto
@@ -33,7 +32,7 @@ function checkAnswers() {
   const result = document.getElementById("result");
   result.innerHTML = `Vous avez obtenu ${score} / ${total} bonnes réponses.`;
 
-  if (score >= 7) {
+  if (score > 7) {
     result.style.color = "green";
   } else {
     result.style.color = "red";
