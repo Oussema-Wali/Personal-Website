@@ -1,0 +1,314 @@
+/* ===========================================
+   Global CSS – Personal Website (Oussema Wali)
+   =========================================== */
+
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base setup */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fb;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================================
+   Header & Navigation
+   =========================================== */
+header {
+  background-color: #005bbb;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header h1,
+header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Navigation bar */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #d6e9ff;
+}
+
+/* Active menu item */
+nav a.active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+/* ===========================================
+   Main Content & Layout
+   =========================================== */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+}
+
+/* Article (main content area) */
+article {
+  flex: 3;
+  min-width: 300px;
+}
+
+main h2 {
+  color: #005bbb;
+  border-bottom: 2px solid #005bbb;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Aside (right side image) */
+aside {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+aside img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================================
+   Text, Lists, Tables, and Images
+   =========================================== */
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #e9f1ff;
+  color: #003e8a;
+}
+
+.competences-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.competences-table th,
+.competences-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.competences-table th {
+  background-color: #e9f1ff;
+  color: #003e8a;
+  font-weight: bold;
+}
+
+.competences-table tr:nth-child(even) {
+  background-color: #f8f9fb;
+}
+
+
+/* ===========================================
+   Forms (Contact & Quiz)
+   =========================================== */
+form {
+  background: #f2f6ff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #d0e1ff;
+}
+
+fieldset {
+  border: 1px solid #bcd0f7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  color: #005bbb;
+}
+
+label {
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: #005bbb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: #003e8a;
+}
+
+/* Quiz result */
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #005bbb;
+}
+
+/* ===========================================
+   Footer
+   =========================================== */
+footer {
+  background-color: #005bbb;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #d6e9ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================================
+   Responsive Design (Mobile Friendly)
+   =========================================== */
+@media (max-width: 768px) {
+  header h1,
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  article,
+  aside {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  aside img {
+    max-width: 180px;
+    margin: 15px auto;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
