@@ -63,7 +63,10 @@ nav a:hover {
 
 /* Active menu item */
 nav a.active {
-  border-bottom: 2px solid white;
+  background-color: white;
+  color: #005bbb;
+  padding: 5px 10px;
+  border-radius: 5px;
   font-weight: bold;
 }
 
