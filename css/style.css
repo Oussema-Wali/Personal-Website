@@ -296,3 +296,15 @@ footer a:hover {
 #reseaux_sociaux{
   list-style-type: none;
 }
+
+/*parcours*/
+.parcours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parcours-list li {
+  margin-bottom: 20px;
+}
+
