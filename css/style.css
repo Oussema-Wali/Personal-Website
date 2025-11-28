@@ -18,7 +18,10 @@ body {
   padding: 0;
 }
 
-/*  Header & Navigation */
+
+/* header and nav */
+
+
 header {
   background-color: #005bbb;
   color: white;
@@ -26,20 +29,13 @@ header {
   padding: 20px 10px;
 }
 
-header h1,
-header h2 {
+header h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-
 nav {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav a {
@@ -61,6 +57,57 @@ nav a.active {
   border-radius: 5px;
   font-weight: bold;
 }
+
+
+/* footer */
+
+footer {
+  background-color: #005bbb;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #d6e9ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#footer-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+footer p img {  
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#footer-info a {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
 
 /*   Main Content & Layout */
 main {
@@ -224,24 +271,6 @@ input[type="button"]:hover {
   color: #005bbb;
 }
 
-/* Footer*/
-footer {
-  background-color: #005bbb;
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  font-size: 0.9rem;
-  margin-top: 30px;
-}
-
-footer a {
-  color: #d6e9ff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
 
 /*  Responsive Design (Mobile Friendly)*/
 @media (max-width: 768px) {
