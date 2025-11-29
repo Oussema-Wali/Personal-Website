@@ -135,8 +135,12 @@ main h2 {
   margin-bottom: 15px;
 }
 
+h3 {
+  color: red;
+}
 
-/* les paragraphes avec floating img */
+
+/* les paragraphes avec floating img et video */
 
 .container {
   display: flex;
@@ -154,10 +158,24 @@ aside {
 }
 
 aside img {
+  width: auto;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+aside video {
   width: 100%;
   max-width: 220px;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 
@@ -209,7 +227,7 @@ tr:nth-child(even) {
 }
 
 
-/*  Forms (Contact & Quiz) */
+/*  Forms: quizz et contact */
 
 
 form {
@@ -272,7 +290,7 @@ input[type="button"]:hover {
 }
 
 
-/*  Responsive Design (Mobile Friendly)*/
+/*  responsive design*/
 
 
 @media (max-width: 768px) {
@@ -357,4 +375,12 @@ input[type="button"]:hover {
 
 #figure-iit{
   margin-top: 30px;
+}
+
+.indent{
+  text-indent: 50px;
+}
+
+figcaption{
+  text-align: center;
 }

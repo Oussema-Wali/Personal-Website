@@ -20,7 +20,16 @@ function checkAnswers() {
     q15: "b"  // 3 sets
     };
 
+  /*verif response*/
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (!selected) {
+      alert("Veuillez répondre à toutes les questions!");
+      return;
+    }
+  }
 
+  /*callcul resultat*/
 
   for (let key in answers) {
     const selected = document.querySelector(`input[name="${key}"]:checked`);
@@ -29,12 +38,17 @@ function checkAnswers() {
     }
   }
 
+
+  /*affichage resultat*/
   const result = document.getElementById("result");
   result.innerHTML = `Vous avez obtenu ${score} / ${total} bonnes réponses.`;
 
-  if (score > 7) {
+  if (score > 10) {
     result.style.color = "green";
-  } else {
+  } else if (score > 5) {
+    result.style.color = "orange";
+  }
+  else {
     result.style.color = "red";
   }
 }
