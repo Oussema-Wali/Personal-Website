@@ -61,6 +61,7 @@ nav a.active {
 
 /* footer */
 
+
 footer {
   background-color: #005bbb;
   color: white;
@@ -109,7 +110,9 @@ footer p img {
 }
 
 
-/*   Main Content & Layout */
+/*  main */
+
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -124,11 +127,6 @@ main {
   gap: 20px;
 }
 
-article {
-  flex: 3;
-  min-width: 300px;
-}
-
 main h2 {
   color: #005bbb;
   border-bottom: 2px solid #005bbb;
@@ -137,12 +135,22 @@ main h2 {
   margin-bottom: 15px;
 }
 
-aside {
-  flex: 1;
-  min-width: 200px;
+
+/* les paragraphes avec floating img */
+
+.container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  width: 100%;
+}
+
+.text {
+  flex: 1;
+}
+
+aside {
+  flex: 0 0 220px;
+  margin-left: auto;
 }
 
 aside img {
@@ -152,7 +160,10 @@ aside img {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Text, Lists, Tables, and Images*/
+
+/* lists */
+
+
 ul {
   margin-left: 20px;
 }
@@ -161,6 +172,8 @@ li {
   margin-bottom: 5px;
 }
 
+/* images */
+
 img {
   display: block;
   margin: 10px auto;
@@ -168,6 +181,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* tables */
+
 
 table {
   width: 100%;
@@ -178,40 +194,24 @@ table {
 th,
 td {
   border: 1px solid #ccc;
-  padding: 8px;
+  padding: 10px;
   text-align: left;
 }
 
 th {
   background-color: #e9f1ff;
   color: #003e8a;
-}
-
-.competences-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-.competences-table th,
-.competences-table td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
-}
-
-.competences-table th {
-  background-color: #e9f1ff;
-  color: #003e8a;
   font-weight: bold;
 }
 
-.competences-table tr:nth-child(even) {
+tr:nth-child(even) {
   background-color: #f8f9fb;
 }
 
 
 /*  Forms (Contact & Quiz) */
+
+
 form {
   background: #f2f6ff;
   padding: 20px;
@@ -273,6 +273,8 @@ input[type="button"]:hover {
 
 
 /*  Responsive Design (Mobile Friendly)*/
+
+
 @media (max-width: 768px) {
   header h1,
   header h2 {
@@ -322,22 +324,28 @@ input[type="button"]:hover {
   }
 }
 
-#reseaux_sociaux{
-  list-style-type: none;
-}
 
-/*page parcours*/
-.parcours-list {
-  list-style: none;
+/* list horizontale */
+
+
+#list-horizontale {
+  list-style: none;       
   padding: 0;
-  margin: 0;
+  display: flex;          
+  gap: 15px;              
+  justify-content: center;
 }
 
-.parcours-list li {
-  margin-bottom: 20px;
+#list-horizontale li img {
+  width: 30px;            
+  height: 30px;           
+  object-fit: contain;    
 }
+
 
 /*page iit*/
+
+
 #img-iit{
   width: 100%;
   height: auto;
